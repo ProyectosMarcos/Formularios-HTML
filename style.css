@@ -1,0 +1,308 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        height: 100% 
+    }
+    body {
+        min-height: 100%;  background-color: rgb(147, 249, 249);
+    
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+   body {
+   background-image: url(/Imagenes/Veterinarios.jpg);
+   background-size: cover;
+   }
+
+   h1 {
+    text-align: left;
+    margin-left: 3.3rem;
+    font-size: 11rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(122, 195, 137);
+   }
+   h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: rgb(242, 121, 121);
+    background-color: rgb(175, 225, 185);
+    width: max-content;
+    margin-left: 1.2rem;
+    
+   }
+   h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-left: 1.3rem;
+    color: rgba(16, 90, 218, 0.904);
+    background-color: rgb(175, 225, 185);
+    width: max-content;
+   }
+   fieldset {
+    width: 50rem;
+    height: auto;
+    border: none;
+   }
+   legend {
+    color: rgb(228, 7, 7);
+    font-size: 2rem;
+   }
+   label {
+    font-size: 2rem;
+    color: rgb(38, 53, 53);
+    font-weight: bold;
+   }
+   input {
+    font-size: 1.34rem;
+
+   }
+   span {
+    font-size: 2rem;
+   }
+   
+   #label-email {
+    margin-left: 14rem;
+    margin-bottom: 13rem;
+   }
+   .nombre {
+   margin-left: 1rem;
+   }
+   .email {
+    margin-left: 1rem;
+   }
+   .contraseña {
+    margin-left: 3rem;
+   }
+   #opcion {
+    margin-left: 2rem;
+   }
+   #raza {
+    width: 8.5rem;
+    font-size: 1.5rem;
+   }
+
+   #animal {
+    margin-left: 1.6rem;
+    
+   }
+   #raza2 {
+    width: 8.5rem;
+    font-size: 1.5rem;
+   }
+   #color {
+    margin-left: 2.2rem;
+   }
+   #selecciona1 {
+    margin-left: 2.2rem;
+   }
+   #comentarios {
+    width: 50rem;
+    height: 8rem;
+   }
+   #modal {
+    margin: auto;
+    height: max-content;
+    background: rgb(140, 220, 210);
+   }
+   #btn-open-modal {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7rem;
+    position: absolute;
+    background-color: rgb(240, 102, 102);
+    color: rgb(165, 250, 202);
+    cursor: pointer;
+    margin-left: 6rem;
+    margin-top: 1rem;
+   }
+   #btn-open-modal:active {
+    transition: 0.1s;
+    transform: scale(0.9);
+    cursor: pointer;
+   }
+   #btn-close-modal {
+  margin-left: 40%;
+ width: 9rem;
+ background: rgb(236, 60, 60);
+ font-size: 1.7rem;
+ cursor: pointer;
+   }
+   #btn-close-modal:active {
+    transition: 0.1s;
+    transform: scale(0.9);
+   }
+   #enviar{
+    margin-left: 18.6rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+   }
+   #enviar:active {
+    transition: 0.1s;
+    transform: scale(0.9);
+   }
+   #confirmar1 {
+    margin-left: 1.7rem;
+    cursor: pointer;
+   }
+   #comentarios {
+    font-size: 1.6rem;
+    cursor: pointer;
+   }
+
+
+
+
+/*****************************************************/
+
+
+#modal2 {
+   margin: auto;
+    width: 73.5rem;
+    height: 20rem;
+   background: none;
+   cursor: pointer;
+   border: solid;
+}
+
+#btn-abrir-modal {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7rem;
+    background-color: rgb(240, 102, 102);
+    color: rgb(165, 250, 202);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+
+#btn-cerrar-modal {
+    width: 9rem;
+    background: rgb(236, 60, 60);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+
+.contenedor-veterinaria {
+    display: inline-flex;
+    gap: 1rem;
+    height: auto;
+     }
+     .veterinaria{ 
+  
+  }
+ 
+
+  #facultad {
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    background-color: azure;
+  }
+  
+  /*****************************************/
+  @media(min-width: 306px) and (max-width: 634px) {
+    
+#modal2 {
+    margin: auto;
+     width: 73.5rem;
+     height: 20rem;
+    background: none;
+    cursor: pointer;
+    border: solid;
+ }
+ 
+ #btn-abrir-modal {
+     font-family: 'Playfair Display', serif;
+     font-size: 2.7rem;
+     background-color: rgb(240, 102, 102);
+     color: rgb(165, 250, 202);
+     cursor: pointer;
+     margin-left: 1rem;
+     margin-top: 6rem;
+ }
+ 
+ #btn-cerrar-modal {
+     width: 9rem;
+     background: rgb(236, 60, 60);
+     font-size: 1.7rem;
+     cursor: pointer;
+ }
+ 
+ 
+ .contenedor-veterinaria {
+     display: block;
+     gap: 1rem;
+     height: auto;
+      }
+      .veterinaria{ 
+   
+   }
+  
+ 
+   #facultad {
+     color: rgb(0, 0, 0);
+     font-style: bold;
+     font-family: 'Crimson Text', serif;
+     font-size: 2.5rem;
+     background-color: azure;
+   }
+   
+  }
+
+  /*****************************************************************/
+  @media(min-width: 0px) and (max-width: 407px) {
+    
+    #modal2 {
+        margin: auto;
+         width: 73.5rem;
+         height: 20rem;
+        background: azure;
+        cursor: pointer;
+        border: solid;
+     }
+     
+     #btn-abrir-modal {
+         font-family: 'Playfair Display', serif;
+         font-size: 2.7rem;
+         background-color: rgb(240, 102, 102);
+         color: rgb(165, 250, 202);
+         cursor: pointer;
+         margin-left: 1rem;
+         margin-top: 6rem;
+     }
+     
+     #btn-cerrar-modal {
+         width: 9rem;
+         background: rgb(236, 60, 60);
+         font-size: 1.7rem;
+         cursor: pointer;
+     }
+     
+     
+     .contenedor-veterinaria {
+         display: block;
+         gap: 1rem;
+         height: auto;
+          }
+          .veterinaria{ 
+       
+       }
+      
+     
+       #facultad {
+         color: rgb(0, 0, 0);
+         font-style: bold;
+         font-family: 'Crimson Text', serif;
+         font-size: 2.5rem;
+         background-color: azure;
+       }
+       
+      }

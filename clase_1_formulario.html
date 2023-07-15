@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>InstaPet</title>
+</head>
+<body>
+<main>
+    
+    <h1>InstaPet</h1>
+    <h2>Red social creada para la<br> comunicacion entre la mascota<br> y su veterinario.</h2>
+    <h3>Donde podra tambien reservar<br> turnos para su atención</h3>
+    <button id="btn-open-modal">Iniciar</button>
+    <dialog id="modal">
+    <form  action="https://formspree.io/f/xayzrzzg" method="POST">
+        <fieldset>
+            <strong><legend>Completa el formulario para que puedas registrarte y reservar un turno</legend></strong><br>
+        <label for="nombre" class="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" placeholder="Ingresa tu edad" required><br>
+        <label class="email" for="ciudad">Email:</label>
+        <input type="text" id="email" placeholder="Ingresa tu email" required>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" required><br>
+          
+       <label for="animal" id="animal">Animal</label>
+        <input type="radio" name="animal" value="Perro" required><span>Perro</span>
+        <input type="radio" name="animal" value="Gato" required><span>Gato</span>
+
+        <label for="raza" id="opcion">Raza:</label><select name="raza" id="raza">
+        <option value="0" disabled selected>Busqueda</option>
+        <option value="Bóxer">Bóxer</option>
+        <option value="Dóberman">Dóberman</option>
+        <option value="Pastor alemán">Pastor alemán</option>
+        <option value="Rottweiler">Rottweiler</option>
+        <option value="Otros">Otros</option>
+       </select>
+       <label for="raza2">Raza:</label>
+       <select name="raza2" id="raza2">
+        <option value="0" disabled selected>Busqueda</option>
+        <option value="Korat">Korat</option>
+        <option value="Siamés">Siamés</option>
+        <option value="Americano de pelo duro">Americano de pelo duro</option>
+        <option value="Bombay">Bombay</option>
+        <option value="Otro">Otros</option>
+       </select><br>
+       <label for="color" id="color">Color:</label>
+       <input type="color">
+       <label for="number">Numero de telefono:</label>
+       <input type="number" name="numero" id="number" placeholder="Numero de telefono" required><br>
+       <label for="selecciona" id="selecciona1">Selecciona el dia para reservar tu turno:</label><input id="selecciona" type="date" required>
+       <textarea name="comentarios" id="comentarios">Comentarios</textarea>
+       <label for="confirmar" id="confirmar1">¿Confirmas los datos ingresados en el formulario?</label><input id="confirmar" type="checkbox" required><br>
+       <input type="submit" id="enviar">
+        </fieldset>
+</form>
+<button id="btn-close-modal"><b>Cerrar</b></button>
+</dialog>
+<button id="btn-abrir-modal">¿Donde<br>nos encontramos?</button>
+
+<dialog id="modal2">
+    <span id="facultad">Somos Facultad de Ciencias Veterinarias</span>
+     <div class="contenedor-veterinaria">
+<div class="veterinaria">
+    <iframe width="350" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.318360259984!2d-58.48264652487061!3d-34.596110357095355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb619cb34d511%3A0xc42097268fdc094b!2sFacultad%20de%20Ciencias%20Veterinarias!5e0!3m2!1ses-419!2sar!4v1689381465266!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="veterinaria-video">
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/MnSTkEXT32w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div> 
+<button id="btn-cerrar-modal">Cerrar</button>
+</dialog>
+
+</main>
+</body>
+<script src="/modal.js"></script>
+<script src="/modal2.js"></script>
+</html>
